@@ -1,0 +1,104 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:-webkit-linear-gradient(135deg, #581b6b, #00196c);
+    color: #86fdef;
+}
+
+/* Header Styles */
+header {
+    background: -webkit-linear-gradient(135deg, #610e82, #100638);
+    text-align: center;
+    padding: 20px 0;
+    background-clip: text; /* Added for compatibility */
+}
+
+/* Content Container Styles */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: -webkit-linear-gradient(135deg, #172D13, #152b74);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    animation: fadeIn 1s ease-in-out;
+    background-clip: padding-box; /* Added for compatibility */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Section Heading Styles */
+h1 {
+    background: -webkit-linear-gradient(135deg, #3370ffda, #00ff5e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    margin-bottom: 10px;
+    background-clip: text; /* Added for compatibility */
+}
+
+h2 {
+    background: -webkit-linear-gradient(135deg, #0478fc, #ff6bd8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    margin-top: 20px;
+    background-clip: text; /* Added for compatibility */
+}
+
+/* Link Styles */
+a {
+    color: #00ff11;
+    text-decoration: none;
+    background-image: linear-gradient(transparent 0%, transparent 100%);
+    background-repeat: repeat-x;
+    background-size: 0.2rem 0.2rem;
+    background-position: 0 1.1em;
+    transition: background-size 0.3s;
+}
+
+a:hover {
+    background-size: 100% 0.2rem;
+}
+
+/* Paragraph Styles */
+p {
+    margin: 0;
+    line-height: 1.4;
+    color: #4ae7ed;
+}
+
+/* Address Styles */
+.address {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #fcd824;
+}
+
+/* Additional Information Styles */
+.additional-info {
+    margin-top: 20px;
+}
+
+/* Profile Picture Styles */
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: scale-down;
+    border-radius: 102px;
+    border-radius: 102px;
+    background: #4e0670;
+    box-shadow:  17px 17px 30px #58087e,
+                 -17px -17px 30px #541273;
+    display: block;
+    margin: 0 auto 20px;
+}
