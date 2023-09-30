@@ -38,10 +38,9 @@ header {
 
 /* Section Heading Styles */
 h1,
-h2 {
-    background: linear-gradient(135deg, #bb67fa, #d4e5d0, #fca1ca); /* Light purple gradient for headings */
+h2 {color: #24ee8c;
+    background: #820fda; /* Light purple gradient for headings */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-size: 24px; /* You can adjust the font size as needed */
     margin-bottom: 10px;
     background-clip: text;
