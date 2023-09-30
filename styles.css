@@ -3,13 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background:-webkit-linear-gradient(135deg, #581b6b, #00196c);
+    background:-webkit-linear-gradient(135deg, #b155cd, #0a33ba);
     color: #86fdef;
 }
 
 /* Header Styles */
 header {
-    background: -webkit-linear-gradient(135deg, #610e82, #100638);
+    background: -webkit-linear-gradient(135deg, #970fcd, #2d1396);
     text-align: center;
     padding: 20px 0;
     background-clip: text; /* Added for compatibility */
@@ -20,7 +20,7 @@ header {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: -webkit-linear-gradient(135deg, #172D13, #152b74);
+    background: -webkit-linear-gradient(135deg, #54b443, #1034a8);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     animation: fadeIn 1s ease-in-out;
@@ -57,7 +57,7 @@ h2 {
 
 /* Link Styles */
 a {
-    color: #00ff11;
+    color: #14e622;
     text-decoration: none;
     background-image: linear-gradient(transparent 0%, transparent 100%);
     background-repeat: repeat-x;
@@ -96,9 +96,9 @@ img {
     object-fit: scale-down;
     border-radius: 102px;
     border-radius: 102px;
-    background: #4e0670;
-    box-shadow:  17px 17px 30px #58087e,
-                 -17px -17px 30px #541273;
+    background: #35044b;
+    box-shadow:  17px 17px 30px #2d063f,
+                 -17px -17px 30px #280838;
     display: block;
     margin: 0 auto 20px;
 }
