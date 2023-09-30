@@ -3,16 +3,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background:-webkit-linear-gradient(135deg, #b155cd, #0a33ba);
-    color: #86fdef;
+    background: -webkit-linear-gradient(135deg, #000000, #0a0a0a); /* Dark gradient background */
+    color: #fff; /* White text */
 }
 
 /* Header Styles */
 header {
-    background: -webkit-linear-gradient(135deg, #970fcd, #2d1396);
+    background: -webkit-linear-gradient(135deg, #061f4a, #000033); /* Interstellar space-themed gradient background */
     text-align: center;
     padding: 20px 0;
-    background-clip: text; /* Added for compatibility */
+    background-clip: text;
 }
 
 /* Content Container Styles */
@@ -20,11 +20,11 @@ header {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: -webkit-linear-gradient(135deg, #54b443, #1034a8);
+    background: #111; /* Dark gray background */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     animation: fadeIn 1s ease-in-out;
-    background-clip: padding-box; /* Added for compatibility */
+    background-clip: padding-box;
 }
 
 @keyframes fadeIn {
@@ -37,27 +37,19 @@ header {
 }
 
 /* Section Heading Styles */
-h1 {
-    background: -webkit-linear-gradient(135deg, #3370ffda, #00ff5e);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 24px;
-    margin-bottom: 10px;
-    background-clip: text; /* Added for compatibility */
-}
-
+h1,
 h2 {
-    background: -webkit-linear-gradient(135deg, #0478fc, #ff6bd8);
+    background: -webkit-linear-gradient(135deg, #336699, #66ccff, #9900cc); /* Space-themed gradient for headings with a bit of purple */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 18px;
-    margin-top: 20px;
-    background-clip: text; /* Added for compatibility */
+    font-size: 24px; /* You can adjust the font size as needed */
+    margin-bottom: 10px;
+    background-clip: text;
 }
 
 /* Link Styles */
 a {
-    color: #14e622;
+    color: #66ccff; /* Light blue link color */
     text-decoration: none;
     background-image: linear-gradient(transparent 0%, transparent 100%);
     background-repeat: repeat-x;
@@ -74,14 +66,14 @@ a:hover {
 p {
     margin: 0;
     line-height: 1.4;
-    color: #4ae7ed;
+    color: #ccc; /* Light gray text */
 }
 
 /* Address Styles */
 .address {
     font-size: 14px;
     margin-top: 10px;
-    color: #fcd824;
+    color: #999; /* Light gray address text */
 }
 
 /* Additional Information Styles */
@@ -94,11 +86,9 @@ img {
     width: 150px;
     height: 150px;
     object-fit: scale-down;
-    border-radius: 102px;
-    border-radius: 102px;
-    background: #35044b;
-    box-shadow:  17px 17px 30px #2d063f,
-                 -17px -17px 30px #280838;
+    border-radius: 50%; /* Circular profile picture */
+    background: -webkit-linear-gradient(135deg, #336699, #66ccff, #9900cc); /* Space-themed gradient background for the profile picture with a bit of purple */
+    box-shadow: 1px 1px 390px #05dbf7, -17px -17px 390px #66ccff; /* Subtle shadow */
     display: block;
     margin: 0 auto 20px;
 }
