@@ -9,7 +9,7 @@ body {
 
 /* Header Styles */
 header {
-    background: linear-gradient(135deg, #c80bcf, #0aa0d7, #f700ff, #0800ff, #0fefd5); /* Interstellar space-themed gradient background */
+    background: linear-gradient(135deg, #ce0fd4, #0aa0d7, #f700ff, #0800ff, #0fefd5); /* Interstellar space-themed gradient background */
     text-align: center;
     padding: 20px 0;
     background-clip: text;
