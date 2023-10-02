@@ -20,7 +20,7 @@ header {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: -webkit-linear-gradient(#050223  , #420570 , #460232); /* Dark gray background */
+    background: -webkit-linear-gradient(#251d78  , #30aac6); /* Dark gray background */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     animation: fadeIn 1s ease-in-out;
@@ -38,7 +38,7 @@ header {
 
 /* Section Heading Styles */
 h1,
-h2 {color: #24ee8c;
+h2 {color: #d881ea;
     font-size: 24px; /* You can adjust the font size as needed */
     margin-bottom: 10px;
     background-clip: text;
@@ -46,7 +46,7 @@ h2 {color: #24ee8c;
 
 /* Link Styles */
 a {
-    color: #f406e4; /* Light blue link color */
+    color: #00ff08; /* Light blue link color */
     text-decoration: none;
     background-image: linear-gradient(transparent 0%, transparent 100%);
     background-repeat: repeat-x;
@@ -63,14 +63,14 @@ a:hover {
 p {
     margin: 0;
     line-height: 1.4;
-    color: #ccc; /* Light gray text */
+    color: #ffffff; /* Light gray text */
 }
 
 /* Address Styles */
 .address {
     font-size: 14px;
     margin-top: 10px;
-    color: #e6dede; /* Light gray address text */
+    color: #ffffff; /* Light gray address text */
 }
 
 /* Additional Information Styles */
@@ -84,7 +84,7 @@ img {
     height: 150px;
     object-fit: scale-down;
     border-radius: 50%; /* Circular profile picture */
-    background: -webkit-linear-gradient(135deg, #a066cc, #d6a0ff, #f4ccff); /* Light purple gradient background for the profile picture */
+    background: linear-gradient(135deg, #a066cc, #d6a0ff, #f4ccff); /* Light purple gradient background for the profile picture */
     box-shadow: 1px 1px 390px #05dbf7, -17px -17px 390px #66ccff; /* Subtle shadow */
     display: block;
     margin: 0 auto 20px;
