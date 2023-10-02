@@ -9,7 +9,7 @@ body {
 
 /* Header Styles */
 header {
-    background: -webkit-linear-gradient(135deg, #061f4a, #000033); /* Interstellar space-themed gradient background */
+    background: linear-gradient(135deg, #c80bcf, #0aa0d7, #f700ff, #0800ff, #0fefd5); /* Interstellar space-themed gradient background */
     text-align: center;
     padding: 20px 0;
     background-clip: text;
@@ -20,7 +20,7 @@ header {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: -webkit-linear-gradient(#251d78  , #30aac6); /* Dark gray background */
+    background: linear-gradient(155deg, #9d07f9, #0aa0d7, #cc0fd3, #0800ff, #0fef5d); /* Dark gray background */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     animation: fadeIn 1s ease-in-out;
@@ -38,7 +38,7 @@ header {
 
 /* Section Heading Styles */
 h1,
-h2 {color: #d881ea;
+h2 {color: #a2fe04;
     font-size: 24px; /* You can adjust the font size as needed */
     margin-bottom: 10px;
     background-clip: text;
