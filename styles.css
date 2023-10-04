@@ -6,10 +6,8 @@ body {
     background: #000; /* AMOLED black background */
     color: #fff; /* True white text */
     transition: color 0.3s ease-in-out; /* Smooth text color transition */
-}
-
-body:hover {
-    color: #fec404; /* Change text color to yellow on hover */
+    opacity: 0; /* Initially hide the page */
+    animation: fadeInPage 1s ease-in-out 0.5s forwards; /* Fade in animation with a delay */
 }
 
 /* Header Styles */
@@ -33,7 +31,7 @@ header:hover {
     background: #111; /* Dark gray background */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    animation: fadeIn 1s ease-in-out;
+    animation: fadeInContent 1s ease-in-out 1s forwards; /* Fade in content with a delay */
     background-clip: padding-box;
 }
 
@@ -111,11 +109,30 @@ img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
     display: block;
     margin: 0 auto 20px;
-    transition: filter 0.6s ease-in-out; /* Smooth filter transition */
+    transition: filter 0.6s ease-in-out, width 0.6s ease-in-out, height 0.6s ease-in-out; /* Smooth filter and size transition */
 }
 
 img:hover {
     filter: grayscale(60%);
-    width: 165px;
-    height: 165px;/* Convert the image to grayscale on hover */
+    width: 165px; /* Increase width on hover */
+    height: 165px; /* Increase height on hover */
+}
+
+/* Animations */
+@keyframes fadeInPage {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInContent {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
