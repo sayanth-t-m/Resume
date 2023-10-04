@@ -1,18 +1,28 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Helvetica Neue", sans-serif;
     margin: 0;
     padding: 0;
-    background: -webkit-linear-gradient(135deg, #4a0160, #0c5b77, #6f0c72, #130f87, #118a7c); /* Dark gradient background */
-    color: #fff; /* White text */
+    background: #000; /* AMOLED black background */
+    color: #fff; /* True white text */
+    transition: color 0.3s ease-in-out; /* Smooth text color transition */
+}
+
+body:hover {
+    color: #fec404; /* Change text color to yellow on hover */
 }
 
 /* Header Styles */
 header {
-    background: linear-gradient(135deg, #ce0fd4, #0aa0d7, #f700ff, #0800ff, #0fefd5); /* Interstellar space-themed gradient background */
+    background: linear-gradient(135deg, #515151, #000); /* Dark gradient background */
     text-align: center;
     padding: 20px 0;
     background-clip: text;
+    transition: background 0.3s ease-in-out; /* Smooth background transition */
+}
+
+header:hover {
+    background: linear-gradient(135deg,#515151,#000,  #515151); /* Interstellar space-themed gradient background on hover */
 }
 
 /* Content Container Styles */
@@ -20,33 +30,34 @@ header {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: linear-gradient(155deg, #9d07f9, #0aa0d7, #cc0fd3, #0800ff, #0fef5d); /* Dark gray background */
+    background: #111; /* Dark gray background */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     animation: fadeIn 1s ease-in-out;
     background-clip: padding-box;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 /* Section Heading Styles */
 h1,
-h2 {color: #fec404;
-    font-size: 24px; /* You can adjust the font size as needed */
+h2 {
+    color: #fec404;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 28px; /* You can adjust the font size as needed */
     margin-bottom: 10px;
     background-clip: text;
+    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth font size and color transition */
+}
+
+h1:hover,
+h2:hover {
+    font-size: 32px; /* Increase font size on hover */
+    color: #0072ff; /* Change text color to professional blue on hover */
 }
 
 /* Link Styles */
 a {
-    color: #00ff08; /* Light blue link color */
+    color: #00ff26; /* Professional green link color */
     text-decoration: none;
     background-image: linear-gradient(transparent 0%, transparent 100%);
     background-repeat: repeat-x;
@@ -62,15 +73,27 @@ a:hover {
 /* Paragraph Styles */
 p {
     margin: 0;
-    line-height: 1.4;
-    color: #ffffff; /* Light gray text */
+    line-height: 1.6;
+    color: #eee; /* Slightly off-white text for a professional look */
+    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth font size and color transition */
+}
+
+p:hover {
+    font-size: 18px; /* Increase font size on hover */
+    color: #00ff08; /* Change text color to light blue on hover */
 }
 
 /* Address Styles */
 .address {
     font-size: 14px;
     margin-top: 10px;
-    color: #ffffff; /* Light gray address text */
+    color: #ccc; /* Light gray address text for a professional look */
+    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth font size and color transition */
+}
+
+.address:hover {
+    font-size: 16px; /* Increase font size on hover */
+    color: #00ff08; /* Change text color to light blue on hover */
 }
 
 /* Additional Information Styles */
@@ -82,10 +105,17 @@ p {
 img {
     width: 150px;
     height: 150px;
-    object-fit: scale-down;
+    object-fit: cover;
     border-radius: 50%; /* Circular profile picture */
     background: linear-gradient(135deg, #a066cc, #d6a0ff, #f4ccff); /* Light purple gradient background for the profile picture */
-    box-shadow: 1px 1px 390px #05dbf7, -17px -17px 390px #66ccff; /* Subtle shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
     display: block;
     margin: 0 auto 20px;
+    transition: filter 0.6s ease-in-out; /* Smooth filter transition */
+}
+
+img:hover {
+    filter: grayscale(60%);
+    width: 165px;
+    height: 165px;/* Convert the image to grayscale on hover */
 }
