@@ -1,25 +1,108 @@
 // script.js
 
-// JavaScript code to calculate and display age
-function calculateAge(birthdate) {
-    const birthDate = new Date(birthdate);
-    const currentDate = new Date();
-    const age = currentDate.getFullYear() - birthDate.getFullYear();
-    
-    // Check if the birthdate for the current year has passed or not
-    if (currentDate.getMonth() < birthDate.getMonth() || (currentDate.getMonth() === birthDate.getMonth() && currentDate.getDate() < birthDate.getDate())) {
-        age--;
-    }
-    
-    return age;
-}
-
-// Update the age and formatted birthdate on the web page
-const birthdateElement = document.getElementById("birthdate");
-const ageElement = document.getElementById("age");
-const birthdate = new Date("2003-09-12"); // Updated with your birthdate (YYYY-MM-DD)
-
-const formattedBirthdate = birthdate.toLocaleDateString('en-GB'); // 'en-GB' for dd/mm/yyyy format
-
-birthdateElement.textContent = formattedBirthdate; // Display the formatted birthdate
-ageElement.textContent = calculateAge(birthdate); // Display the calculated age
+// Configure particle animation
+particlesJS("particles-js", {
+    "particles": {
+        "number": {
+            "value": 80,
+            "density": {
+                "enable": true,
+                "value_area": 800
+            }
+        },
+        "color": {
+            "value": "#00bcd4" // Light blue particles
+        },
+        "shape": {
+            "type": "circle",
+            "stroke": {
+                "width": 0,
+                "color": "#000000"
+            },
+            "polygon": {
+                "nb_sides": 5
+            }
+        },
+        "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+            }
+        },
+        "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+                "enable": false,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+            }
+        },
+        "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#00bcd4", // Light blue links
+            "opacity": 0.4,
+            "width": 1
+        },
+        "move": {
+            "enable": true,
+            "speed": 6,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+            }
+        }
+    },
+    "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+            "onhover": {
+                "enable": true,
+                "mode": "repulse"
+            },
+            "onclick": {
+                "enable": true,
+                "mode": "push"
+            },
+            "resize": true
+        },
+        "modes": {
+            "grab": {
+                "distance": 400,
+                "line_linked": {
+                    "opacity": 1
+                }
+            },
+            "bubble": {
+                "distance": 400,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
+                "speed": 3
+            },
+            "repulse": {
+                "distance": 200,
+                "duration": 0.4
+            },
+            "push": {
+                "particles_nb": 4
+            },
+            "remove": {
+                "particles_nb": 2
+            }
+        }
+    },
+    "retina_detect": true
+});

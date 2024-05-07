@@ -1,102 +1,65 @@
 /* Global Styles */
 body {
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: #000; /* AMOLED black background */
-    color: #fff; /* True white text */
-    transition: color 0.3s ease-in-out; /* Smooth text color transition */
-    opacity: 0; /* Initially hide the page */
-    animation: fadeInPage 1s ease-in-out 0.5s forwards; /* Fade in animation with a delay */
+    background: #000; /* Dark background */
+    color: #fff; /* White text */
 }
 
 /* Header Styles */
 header {
-    background: linear-gradient(135deg, #515151, #000); /* Dark gradient background */
+    background: linear-gradient(135deg, rgba(0,0,0,0.1), rgba(0,0,0,0.6)); /* Glassy space-themed effect */
     text-align: center;
     padding: 20px 0;
-    background-clip: text;
-    transition: background 0.3s ease-in-out; /* Smooth background transition */
+    color: #fff;
+    backdrop-filter: blur(10px); /* Apply blur effect */
 }
 
-header:hover {
-    background: linear-gradient(135deg,#515151,#000,  #515151); /* Interstellar space-themed gradient background on hover */
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-/* Content Container Styles */
+.header-info {
+    margin-left: 20px;
+}
+
+.contact-info a {
+    color: #00bcd4; /* Light blue links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #008ba3; /* Darker blue on hover */
+}
+
+/* Container Styles */
 .container {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: #111; /* Dark gray background */
+    background: rgba(255, 255, 255, 0.1); /* Translucent white background */
+    backdrop-filter: blur(10px); /* Apply blur effect */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    animation: fadeInContent 1s ease-in-out 1s forwards; /* Fade in content with a delay */
-    background-clip: padding-box;
 }
 
-/* Section Heading Styles */
-h1,
-h2 {
-    color: #fec404;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    font-size: 28px; /* You can adjust the font size as needed */
-    margin-bottom: 10px;
-    background-clip: text;
-    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth font size and color transition */
+.container h2 {
+    color: #eee; /* Light gray headers */
 }
 
-h1:hover,
-h2:hover {
-    font-size: 32px; /* Increase font size on hover */
-    color: #0072ff; /* Change text color to professional blue on hover */
-}
-
-/* Link Styles */
-a {
-    color: #00ff26; /* Professional green link color */
-    text-decoration: none;
-    background-image: linear-gradient(transparent 0%, transparent 100%);
-    background-repeat: repeat-x;
-    background-size: 0.2rem 0.2rem;
-    background-position: 0 1.1em;
-    transition: background-size 0.3s;
-}
-
-a:hover {
-    background-size: 100% 0.2rem;
-}
-
-/* Paragraph Styles */
-p {
-    margin: 0;
-    line-height: 1.6;
-    color: #eee; /* Slightly off-white text for a professional look */
-    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth font size and color transition */
-}
-
-p:hover {
-    font-size: 18px; /* Increase font size on hover */
-    color: #00ff08; /* Change text color to light blue on hover */
-}
-
-/* Address Styles */
-.address {
-    font-size: 14px;
-    margin-top: 10px;
-    color: #ccc; /* Light gray address text for a professional look */
-    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth font size and color transition */
-}
-
-.address:hover {
-    font-size: 16px; /* Increase font size on hover */
-    color: #00ff08; /* Change text color to light blue on hover */
+.container p {
+    color: #ccc; /* Light gray text */
 }
 
 /* Additional Information Styles */
 .additional-info {
     margin-top: 20px;
+    color: #ccc; /* Light gray text */
 }
 
 /* Profile Picture Styles */
@@ -104,35 +67,12 @@ img {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 50%; /* Circular profile picture */
-    background: linear-gradient(135deg, #a066cc, #d6a0ff, #f4ccff); /* Light purple gradient background for the profile picture */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
-    display: block;
-    margin: 0 auto 20px;
-    transition: filter 0.6s ease-in-out, width 0.6s ease-in-out, height 0.6s ease-in-out; /* Smooth filter and size transition */
+    border-radius: 50%;
+    background: linear-gradient(135deg, #00bcd4, #009688); /* Gradient background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: filter 0.6s, width 0.6s, height 0.6s;
 }
 
 img:hover {
-    filter: grayscale(60%);
-    width: 165px; /* Increase width on hover */
-    height: 165px; /* Increase height on hover */
-}
-
-/* Animations */
-@keyframes fadeInPage {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInContent {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+    filter: grayscale(30%);
 }
